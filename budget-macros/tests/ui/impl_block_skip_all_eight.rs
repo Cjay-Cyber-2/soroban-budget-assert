@@ -23,7 +23,7 @@ impl Dummy {
     pub fn method_ledger(&self, _env: &soroban_sdk::Env) {}
 
     #[budget_macros::budget_scaling(sizes = [10, 100], model = linear, tolerance = 0.5)]
-    pub fn method_scaling(_env: soroban_sdk::Env, _size: u32) {}
+    pub fn method_scaling(_env: soroban_sdk::Env, _size: u32) { let _ = _env; }
 
     #[budget_macros::budget_lt(cpu = 100000, mem = 100000)]
     pub fn method_both(&self, _env: &soroban_sdk::Env) {}
