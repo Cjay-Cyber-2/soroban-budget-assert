@@ -1,0 +1,18 @@
+error: #[budget_*] on this impl block instrumented no methods: it has no functions, or every function already carries its own budget attribute
+  --> tests/ui/impl_block_skip_all_eight.rs:8:1
+   |
+ 8 | / impl Dummy {
+ 9 | |     #[budget_cpu_lt(100000)]
+10 | |     pub fn method_cpu(&self, env: &Env) {}
+...  |
+31 | |     pub fn method_both(&self, env: &Env) {}
+32 | | }
+   | |_^
+
+warning: unused import: `soroban_sdk::Env`
+ --> tests/ui/impl_block_skip_all_eight.rs:2:5
+  |
+2 | use soroban_sdk::Env;
+  |     ^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
