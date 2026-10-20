@@ -1,4 +1,5 @@
-use budget_macros::*;
+use budget_macros::_;
+use soroban_sdk::Env;
 
 struct Dummy;
 
