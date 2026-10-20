@@ -1,8 +1,8 @@
-use budget_macros::_;
+use budget_macros::budget_lt;
 
 struct Dummy;
 
-#[budget_macros::budget_lt(cpu = 1000000, mem = 1000000)]
+#[budget_lt(cpu = 1000000, mem = 1000000)]
 impl Dummy {
     #[budget_macros::budget_cpu_lt(100000)]
     pub fn method_cpu(&self, _env: &soroban_sdk::Env) {}
