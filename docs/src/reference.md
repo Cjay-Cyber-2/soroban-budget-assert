@@ -1201,3 +1201,5 @@ All macros accept the same limit sources: integer literal, `env = "VAR"`,
 is available on all macros except `budget_scaling`.
 
 - A method with its own `#[budget_cpu_lt]`, `#[budget_mem_lt]`, `#[budget_write_bytes_lt]`, `#[budget_read_bytes_lt]`, `#[budget_events_lt]`, `#[budget_ledger_entries_lt]`, or `#[budget_lt]` attribute is governed by that, not the block limit - it is never asserted twice.
+
+- A method with its own `#[budget_cpu_lt]`, `#[budget_mem_lt]`, `#[budget_write_bytes_lt]`, `#[budget_read_bytes_lt]`, `#[budget_events_lt]`, `#[budget_ledger_entries_lt]`, or `#[budget_lt]` attribute is governed by that, not the block limit - it is never asserted twice.
