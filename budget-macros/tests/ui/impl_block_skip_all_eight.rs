@@ -2,6 +2,8 @@ use budget_macros::budget_lt;
 
 struct Dummy;
 
+#[allow(dead_code)]
+
 #[budget_lt(cpu = 1000000, mem = 1000000)]
 impl Dummy {
     #[budget_macros::budget_cpu_lt(100000)]
