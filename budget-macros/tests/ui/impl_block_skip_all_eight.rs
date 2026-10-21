@@ -3,9 +3,6 @@ use budget_macros::budget_lt;
 struct Dummy;
 
 #[allow(dead_code)]
-fn _use_env(_env: &soroban_sdk::Env) {}
-
-#[allow(dead_code)]
 
 #[budget_lt(cpu = 1000000, mem = 1000000)]
 impl Dummy {
