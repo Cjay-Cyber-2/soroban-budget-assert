@@ -1,8 +1,4 @@
 use budget_macros::budget_lt;
-use soroban_sdk::Env;
-
-// Dummy function using Env to avoid unused import warnings
-fn _dummy_env_use(_env: &Env) {}
 
 struct Dummy;
 
