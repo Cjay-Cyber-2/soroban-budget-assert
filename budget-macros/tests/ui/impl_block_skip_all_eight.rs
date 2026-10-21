@@ -1,4 +1,4 @@
-// use budget_macros::budget_lt;
+use budget_macros::budget_lt;
 
 struct Dummy;
 

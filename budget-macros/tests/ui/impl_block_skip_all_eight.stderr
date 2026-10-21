@@ -5,7 +5,7 @@ error: #[budget_*] on this impl block instrumented no methods: it has no functio
  6 | |
  7 | | #[budget_lt(cpu = 1000000, mem = 1000000)]
  8 | | impl Dummy {
-   | |     ...
- 31 | |     pub fn method_both(&self, _env: &soroban_sdk::Env) {}
- 32 | | }
+...  |
+31 | |     pub fn method_both(&self) {}
+32 | | }
    | |_^
